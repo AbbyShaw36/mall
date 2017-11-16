@@ -1,0 +1,2 @@
+.drag { cursor: move; }
+.drag * { cursor: default; }

@@ -1,0 +1,40 @@
+/*reset*/
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+a { text-decoration: none; }
+ul, ol { list-style: none; }
+
+/*float*/
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before, .clearfix:after { clear: both; display: block; height: 0; content: ""; }
+
+/*padding*/
+.pl_10 { padding-left: 10px; }
+.pr_10 { padding-right: 10px; }
+.p_10 { padding: 10px; }
+
+/*link*/
+.link-default { color: #333; }
+.link-hover:hover { color: #ff4d4d; }
+
+/*dropdown*/
+.dropdown { position: relative; display: inline-block; padding: 0 10px; }
+.dropdown:after { margin-left: 10px; content: "v"; }
+.dropdown_btn { position: relative; z-index: 1; display: inline-block; }
+.dropdown_box { position: absolute; left: 0; /*display: none;*/ }
+.dropdown_btn:hover .dropdown_list { display: block; }
+
+/*page*/
+.page { font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", "微软雅黑", SimSun, sans-serif; font-size: 14px; color: #333; }
+.container { width: 1200px; margin-left: auto; margin-right: auto; }
+
+/*topbar*/
+.topbar { height: 32px; background: #f9f9f9; line-height: 32px; font-size: 12px; }
+.topbar_item { padding: 0 10px; }
+.topbar_area { padding-right: 10px; }
+.topbar_dropdown { border: 1px solid #dcdcdc; border-bottom: none; background: #fff; }
+.topbar_dropdown_box { margin-top: -1px; }
+.topbar_dropdown_list { width: 100px; margin: 0; padding: 0; border: 1px solid #dcdcdc; background: #fff; }
+.topbar_dropdown_link { display: block; padding: 0 10px; }

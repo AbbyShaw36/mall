@@ -1,0 +1,49 @@
+extend layout-shop.pug
+
+block main
+	.page_goods_detail
+		.container
+			.goods_baseInfo
+				.goods_img_list
+				div
+					h2.goods_name 百搭清新花朵两件套连衣裙
+					div
+						span.goods_price_highlight ￥49.00
+						span.goods_price_linethrough ￥69.00
+					.goods_evaluation
+						span 销量27件
+						span 好评率99%
+						span 收藏228人
+					form(action="").order_form
+						.form_row
+							span.label 颜色：
+							label.radio
+								input(type="radio", name="order_color")
+								span
+									img(src="", alt="")
+							label.radio
+								input(type="radio", name="order_color")
+								span
+									img(src="", alt="")
+						.form_row
+							span.label 尺寸：
+							label.radio
+								input(type="radio", name="order_size")
+								span S
+							label.radio
+								input(type="radio", name="order_size")
+								span M
+							label.radio
+								input(type="radio", name="order_size")
+								span L
+							label.radio
+								input(type="radio", name="order_size")
+								span XL
+						.form_row
+							span.label 数量：
+							label.input_number
+								a.prev.input_number_btn(href="javascript: void(0);") -
+								input(type="text", name="order_num")
+								a.next.input_number_btn(href="javascript: void(0);") +
+							|(库存102件)
+			.shop_info

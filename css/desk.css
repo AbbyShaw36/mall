@@ -1,0 +1,11 @@
+/*public*/
+
+.icon { display: inline-block; background-size: 100% 100%; background-repeat: no-repeat; }
+.icon_qq { background-image: url(imgs/qq.jpg); }
+
+/*page*/
+
+.desk { width: 100%; height: 100vh; padding: 20px; background-image: url(imgs/desk_bg.jpg); background-repeat: no-repeat; background-size: 100%; }
+.desk .shortcut_list { width: 80px; }
+.desk .shortcut { display: inline-block; width: 80px; height: 80px; /*border: 1px solid #fff;*/ text-align: center; line-height: 20px; font-size: 12px; color: #fff; }
+.desk .shortcut_icon { display: block; width: 40px; height: 40px; margin: 0 auto; background-color: transparent; line-height: 40px; text-align: center; font-size: 30px; }
