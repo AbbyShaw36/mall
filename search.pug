@@ -1,0 +1,17 @@
+.search
+	form.search_form(action="")
+		.search_type
+			label.search_radio
+				input(type="radio", name="search-type", value="1", checked)
+				span 宝贝
+			label.search_radio
+				input(type="radio", name="search-type", value="2")
+				span 店铺
+		.search_input
+				input(type="text")
+				input(type="submit", value="搜索")
+	.search_link
+		a.search_link_item(href="#") 连衣裙
+		a.search_link_item(href="#") 秋季套装
+		a.search_link_item(href="#") 薄外套
+		a.search_link_item(href="#") 秋季单鞋

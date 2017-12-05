@@ -1,21 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/dialog.css">
-	<link rel="stylesheet" href="css/qq.css">
+  <meta charset="UTF-8"/>
+  <title>购物网</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/public.css"/>
 </head>
 <body>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/dialog.js"></script>
-	<script src="js/qq.js"></script>
-	<script>
-		$(function() {
-			new QQ();
-		})
-	</script>
+  <div class="page">
+    <div class="topbar">
+      <div class="container clearfix">
+        <div class="fl"><span class="pr10"><a class="link-default link-hover" href="#">珠海</a><a class="link-default link-hover c-system pl10" href="#">[切换]</a></span>|<span class="topbar_item"><i class="icon-home c-system"></i>&nbsp;<a class="link-default link-hover" href="index.html">商城首页</a></span></div>
+        <div class="fr"><span class="topbar_item dropdown"><a class="link-default link-hover" href="javascript: void(0);">张三</a>
+            <ul class="dropdown_menu">
+              <li><a class="link-default link-hover" href="#">个人中心</a></li>
+              <li><a class="link-default link-hover" href="#">账号与安全</a></li>
+            </ul></span><span class="topbar_item"><a class="link-default link-hover" href="#">消息（0）</a></span><span class="topbar_item"><a class="link-default link-hover" href="javascript: void(0);">退出</a></span>|<span class="topbar_item"><i class="icon-shop c-system"></i>&nbsp;<a class="link-default link-hover" href="#">购物车</a></span><span class="topbar_item"><i class="icon-order c-system"></i>&nbsp;<a class="link-default link-hover" href="#">我的订单</a></span><span class="topbar_item"><i class="icon-collection c-system"></i>&nbsp;<a class="link-default link-hover" href="#">我的收藏</a></span><span class="topbar_item"><i class="icon-help c-system"></i>&nbsp;<a class="link-default link-hover" href="#">帮助中心</a></span></div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="clearfix py20">
+          <div class="col4 mt20 px20">
+            <h1 class="logo"><a href="index.html">LOGO</a></h1>
+          </div>
+          <div class="col4">
+            <div class="search">
+              <form class="search_form" action="">
+                <div class="search_type">
+                  <label class="search_radio">
+                    <input type="radio" name="search-type" value="1" checked="checked"/><span>宝贝</span>
+                  </label>
+                  <label class="search_radio">
+                    <input type="radio" name="search-type" value="2"/><span>店铺</span>
+                  </label>
+                </div>
+                <div class="search_input">
+                  <input type="text"/>
+                  <input type="submit" value="搜索"/>
+                </div>
+              </form>
+              <div class="search_link"><a class="search_link_item" href="#">连衣裙</a><a class="search_link_item" href="#">秋季套装</a><a class="search_link_item" href="#">薄外套</a><a class="search_link_item" href="#">秋季单鞋</a></div>
+            </div>
+          </div>
+          <div class="contact inline col4 tr mt20 py10 f16"><span class="contact_item"><i class="icon-phone1 c-system mr4"></i>400-888-8888</span><span class="contact_item ml20"><i class="icon-phone2 c-system mr4"></i><a class="link-default contact_link" href="#">在线客服</a></span></div>
+        </div>
+      </div>
+    </header>
+    <div class="main_nav">
+      <div class="container clearfix">
+        <nav class="nav">
+          <ul>
+            <li class="active"><a href="javascript: void(0);">全部分类</a>
+              <ul>
+                <li><a href="#">上衣</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">裙子</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">牛仔裤</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">外套</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">护肤品</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">彩妆</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">家居</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">美食</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">电器</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">书籍</a>
+                  <div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">新品发布</div>
+                      <div><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">卫衣</a><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">雪纺衫</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a>
+                      </div>
+                    </div>
+                    <div class="nav_link_box">
+                      <div class="nav_link_type">人气热销</div>
+                      <div><a href="#">牛仔外套</a><a href="#">衬衫</a><a href="#">吊带背心</a><a href="#">长款T恤</a><a href="#">初秋外套</a><a href="#">针织衫</a><a href="#">V领上衣</a><a href="#">蕾丝衫</a><a href="#">短款上衣</a><a href="#">复古喇叭袖</a><a href="#">卫衣</a><a href="#">雪纺衫</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">美妆馆</a></li>
+            <li><a href="#">新品首发</a></li>
+            <li><a href="#">低价抢购</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main">
+      <div class="page_home">
+        <div class="banner"><a href=""><img src="images/banner.jpg" alt=""/></a></div>
+        <div class="container">
+          <section class="entry_list"><a href="#"><img src="images/1.jpg" alt=""/></a><a href="#"><img src="images/2.jpg" alt=""/></a><a href="#"><img src="images/3.jpg" alt=""/></a><a href="#"><img src="images/4.jpg" alt=""/></a></section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">限时抢购</h2>
+              <div class="countdown"><span>距结束</span><span class="countdown_time">00:12:34</span></div>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">品牌盛宴</h2>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">服饰家居</h2>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">潮流美妆</h2>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">日用百货</h2>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+          <section>
+            <div class="section_head">
+              <h2 class="section_title">家用电器</h2>
+            </div>
+            <div class="section_content"><a class="grid" href=""><img src="" alt=""/></a></div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="ensure">
+        <div class="container">
+          <div class="ensure_col"><i class="ensure_icon icon_quality"></i><span>品质保障</span></div>
+          <div class="ensure_col"><i class="ensure_icon icon_sevenday"></i><span>七天无理由退换货</span></div>
+          <div class="ensure_col"><i class="ensure_icon icon_service"></i><span>特色服务体验</span></div>
+          <div class="ensure_col"><i class="ensure_icon icon_help"></i><span>帮助中心</span></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer_link_col">
+          <div class="footer_link_tit">购物指南</div>
+          <ul class="footer_link_list">
+            <li><a href="">购物流程</a></li>
+            <li><a href="">账户安全</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">会员介绍</a></li>
+          </ul>
+        </div>
+        <div class="footer_link_col">
+          <div class="footer_link_tit">配送方式</div>
+          <ul class="footer_link_list">
+            <li><a href="">配送服务查询</a></li>
+            <li><a href="">上门自提</a></li>
+            <li><a href="">物流费用标准</a></li>
+          </ul>
+        </div>
+        <div class="footer_link_col">
+          <div class="footer_link_tit">支付方式</div>
+          <ul class="footer_link_list">
+            <li><a href="">银联支付</a></li>
+            <li><a href="">支付宝支付</a></li>
+            <li><a href="">微信支付</a></li>
+          </ul>
+        </div>
+        <div class="footer_link_col">
+          <div class="footer_link_tit">售后服务</div>
+          <ul class="footer_link_list">
+            <li><a href="">售后政策</a></li>
+            <li><a href="">价格保护</a></li>
+            <li><a href="">退单说明</a></li>
+            <li><a href="">取消订单</a></li>
+          </ul>
+        </div>
+        <div class="footer_link_col">
+          <div class="footer_link_tit">联系我们</div>
+          <ul class="footer_link_list">
+            <li><a href="">商家入驻</a></li>
+            <li><a href="">营销服务</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">广告服务</a></li>
+          </ul>
+        </div>
+        <div class="footer_contact">
+          <div>400-888-8888</div>
+          <div>周一至周日 8:00-18:00</div>
+          <div><a href="">在线客服</a><a href="">微信</a><a href="">微博</a></div>
+        </div>
+      </div>
+      <div class="copyright">版权所有 Copyright © 2016-2018</div>
+    </footer>
+  </div>
+  <div class="shadow"></div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/public.js"></script>
 </body>
-</html>

@@ -1,0 +1,7 @@
+html, body, h1, h2, h3, h4, h5, h6, p, th, td { margin: 0; padding: 0; }
+table { border-collapse: collapse; }
+a, button, label, input { cursor: pointer; }
+li { list-style: none; }
+textarea { overflow: auto; resize: none; }
+img { border: 0; }
+*:focus { outline: none; }
