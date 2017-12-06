@@ -6,15 +6,15 @@ block header
 		.clearfix.py20
 			.col4.mt20.px20
 				include logo.pug
-			.col4
+			.col4.pr20
 				include search.pug
-			.contact.inline.col4.tr.mt20.py10.f16
-				span.contact_item
-					i.icon-phone1.c-system.mr4
+			.contact.inline.col4.mt20.px20.tr.f16.fb.c-system
+				span.contact_item.pr20
+					i.icon-phone1.mr4
 					|400-888-8888
-				span.contact_item.ml20
-					i.icon-phone2.c-system.mr4
-					a.link-default.contact_link(href="#") 在线客服
+				span.contact_item.px20
+					i.icon-phone2.mr4
+					a.contact_link.c-system(href="#") 在线客服
 
 block nav
 	.main_nav
@@ -25,23 +25,27 @@ block main
 	.page_home
 		.banner
 			a(href="")
-				img(src="images/banner.jpg", alt="")
+				img(src="images/banner.jpg", alt="", style="display: block; width: 100%; height: 410px;")
 		.container
-			section.entry_list
-				a(href="#")
-					img(src="images/1.jpg", alt="")
-				a(href="#")
-					img(src="images/2.jpg", alt="")
-				a(href="#")
-					img(src="images/3.jpg", alt="")
-				a(href="#")
-					img(src="images/4.jpg", alt="")
+			section.entry_list.py20.clearfix
+				.col3.px10
+					a(href="#")
+						img.img(src="images/1.jpg", alt="")
+				.col3.px10
+					a(href="#")
+						img.img(src="images/2.jpg", alt="")
+				.col3.px10
+					a(href="#")
+						img.img(src="images/3.jpg", alt="")
+				.col3.px10
+					a(href="#")
+						img.img(src="images/4.jpg", alt="")
 			section
 				.section_head
 					h2.section_title 限时抢购
-					.countdown
+					.countdown.fr.f16
 						span 距结束
-						span.countdown_time 00:12:34
+						span.countdown_time.ml10.c-system.fb.f18 00:12:34
 				.section_content
 					a.grid(href="")
 						img(src="", alt="")

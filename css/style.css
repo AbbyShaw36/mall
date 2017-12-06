@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?l0yxr1');
-  src:  url('fonts/icomoon.eot?l0yxr1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?l0yxr1') format('truetype'),
-    url('fonts/icomoon.woff?l0yxr1') format('woff'),
-    url('fonts/icomoon.svg?l0yxr1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fsft6o');
+  src:  url('fonts/icomoon.eot?fsft6o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fsft6o') format('truetype'),
+    url('fonts/icomoon.woff?fsft6o') format('woff'),
+    url('fonts/icomoon.svg?fsft6o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,24 +24,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-phone1:before {
-  content: "\e905";
+.icon-down:before {
+  content: "\e900";
 }
-.icon-phone2:before {
-  content: "\e906";
-}
-.icon-help:before {
-  content: "\e904";
-}
-.icon-collection:before {
-  content: "\e903";
-}
-.icon-order:before {
-  content: "\e902";
-}
-.icon-shop:before {
+.icon-tese:before {
   content: "\e901";
 }
+.icon-zheng:before {
+  content: "\e902";
+}
+.icon-question:before {
+  content: "\e903";
+}
+.icon-seven:before {
+  content: "\e904";
+}
 .icon-home:before {
-  content: "\e900";
+  content: "\e905";
+}
+.icon-shop:before {
+  content: "\e906";
+}
+.icon-order:before {
+  content: "\e907";
+}
+.icon-collection:before {
+  content: "\e908";
+}
+.icon-help:before {
+  content: "\e909";
+}
+.icon-phone1:before {
+  content: "\e90a";
+}
+.icon-phone2:before {
+  content: "\e90b";
 }

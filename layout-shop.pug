@@ -1,12 +1,28 @@
 extend layout.pug
 
 block header
-	include logo.pug
-	.shop_logo
-		i.icon-shop
-		.shop_name 女神屋女装
-		.shop_evaluation [ 描述 4.6 质量 4.8 服务 4.9 发货 4.8 ]
-	include search-inside.pug
+	.container.clearfix.py20
+		.col6
+			.fl
+				include logo.pug
+			.shop_logo.fl.ml20.pl20
+				.shop_name
+					i.icon-home.mr4
+					span 女神屋女装
+				.shop_evaluation.f12
+					| | 描述 
+					span.c-system 4.6
+					| | 质量 
+					span.c-system 4.8
+					|  | 服务 
+					span.c-system 4.9
+					|  | 发货 
+					span.c-system 4.8
+					|  |
+		.col6.tr.mt10
+			include search-inside.pug
 
 block nav
-	include nav-shop.pug
+	.shop_nav
+		.container
+			include nav-shop.pug

@@ -1,6 +1,6 @@
 /*reset*/
 *, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
-html { width: 100%; height: 100%; overflow-y: auto; background: #fff; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; }
+html { width: 100%; min-width: 1200px; height: 100%; overflow-y: auto; background: #fff; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; }
 input:not[type=raido], input:not[type=checkbox], button, textarea { border: none; outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 a { text-decoration: none; }
 
@@ -72,6 +72,9 @@ a { text-decoration: none; }
 .f20 { font-size: 20px; }
 .f24 { font-size: 24px; }
 
+/*font weight*/
+.fb { font-weight: bold; }
+
 /*栅格布局*/
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 { float: left; }
 .col1 { width: 8.33333333%; }
@@ -104,7 +107,7 @@ a { text-decoration: none; }
 .shadow { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; opacity: 0; }
 .logo { font-size: 40px; }
 .logo a { color: #ff4d4d; }
-
+.img { display: block; width: 100%; height: 100%; }
 
 /*topbar*/
 .topbar { height: 32px; background: #f9f9f9; border-bottom: 1px solid #dcdcdc; line-height: 32px; font-size: 12px; }
@@ -122,19 +125,23 @@ a { text-decoration: none; }
 .search_input input[type="submit"] { width: 20%; background: #ff4d4d; color: #fff; }
 .search_link_item { display: inline-block; padding: 0 5px; line-height: 24px; font-size: 12px; color: #999; }
 .search_link_item:hover { text-decoration: underline; }
+.search_inside { width: 500px; }
+.search_inside .search_input { height: 30px; margin: 0; padding: 0 10px; }
+.search_inside_btn { height: 30px; margin: 0; padding: 0 20px; border: none; background: #ff4d4d; color: #fff; }
 
 /*nav*/
 .nav > ul { position: relative; margin: 0; padding: 0; }
-.nav > ul ul { position: absolute; display: none; }
+.nav > ul ul { position: absolute; display: none; min-width: 220px; }
 .nav > ul > li { float: left; }
 .nav > ul > li > a { display: block; min-width: 120px; text-align: center; line-height: 40px; font-size: 16px; font-weight: bold; color: #333; }
-.nav > ul > li:first-child > a { min-width: 220px; }
 .nav > ul > li:hover > ul { display: block; }
+
 .main_nav { border-bottom: 2px solid #ff4d4d; }
 .main_nav .active { background: #ff4d4d; }
 .main_nav .active > a { color: #fff; }
+.main_nav .nav > ul > li:first-child > a { min-width: 220px; }
 .main_nav .nav > ul > li:not(.active) > a:hover { color: #ff4d4d; }
-.main_nav .nav > ul > li > ul { min-width: 220px; padding: 0; margin: 0; background: #fff; border: 1px solid #ff4d4d; }
+.main_nav .nav > ul > li > ul { padding: 0; margin: 0; background: #fff; border: 1px solid #ff4d4d; }
 .main_nav .nav > ul > li > ul a { color: #333; }
 .main_nav .nav > ul > li > ul .nav_link_box { margin: 20px; font-size: 12px; }
 .main_nav .nav > ul > li > ul .nav_link_type { margin-bottom: 10px; font-weight: bold; }
@@ -145,3 +152,29 @@ a { text-decoration: none; }
 .main_nav .nav > ul > li > ul > li > a:hover { color: #ff4d4d; }
 .main_nav .nav > ul > li > ul > li > div { display: none; position: absolute; top: 0; left: 100%; min-width: 300px; background: #fff; border: 1px solid #ff4d4d; }
 .main_nav .nav > ul > li > ul > li:hover > div { display: block; }
+
+.shop_nav { background: #333; }
+.shop_nav .nav > ul > li > a { font-weight: normal; font-size: 14px; color: #fff; }
+.shop_nav .nav > ul ul { margin: 0; padding: 0; background: #333; line-height: 40px; }
+.shop_nav .nav > ul ul a { display: block; padding: 0 10px; color: #fff; }
+.shop_nav .nav > ul ul a:hover { background: #999; }
+
+/*session*/
+.section_head { margin-top: 20px; line-height: 30px; }
+.section_title { display: inline-block; font-size: 24px; color: #666; }
+
+/*footer*/
+.footer .ensure { border-top: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; line-height: 100px; }
+.footer .ensure_col { font-size: 18px; font-weight: bold; }
+.footer .ensure_icon { display: inline-block; margin-right: 10px; vertical-align: middle; font-size: 30px; color: #ff4d4d; }
+.footer_link_tit { font-weight: bold; font-size: 16px; line-height: 40px; }
+.footer_link_list { margin: 0; padding: 0; line-height: 26px; font-size: 12px; }
+.footer_link_list a { color: #666; }
+.footer_link_list a:hover { text-decoration: underline; }
+
+.copyright { border-top: 1px solid #dcdcdc; line-height: 50px; font-size: 12px; color: #999; }
+
+/*shop*/
+.shop_logo { border-left: 1px dotted #dcdcdc; line-height: 26px; }
+.shop_name { font-weight: bold; }
+.shop_evaluation { color: #999; }
